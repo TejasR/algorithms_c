@@ -1,6 +1,6 @@
 CC=gcc
 
-all: selectionSort bubbleSort
+all: selectionSort bubbleSort sequentialSearch
 
 selectionSort: ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/using_array/selection_sort.h ./Selection\ sort/test_selection_sort_ua.c
 	$(CC) -o selectionSort ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/test_selection_sort_ua.c
@@ -8,8 +8,11 @@ selectionSort: ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/
 bubbleSort: ./bubble_sort/using_array/bubble_sort.c ./bubble_sort/using_array/bubble_sort.h ./bubble_sort/test_bubble_sort_ua.c
 	$(CC) -o bubbleSort ./bubble_sort/using_array/bubble_sort.c ./bubble_sort/test_bubble_sort_ua.c
 
-install: selectionSort bubbleSort
-	./selectionSort && ./bubbleSort
+sequentialSearch: ./sequential_search/using_array/sequential_search.c ./sequential_search/using_array/sequential_search.h ./sequential_search/test_sequential_search_ua.c
+	$(CC) -o sequentialSearch ./sequential_search/using_array/sequential_search.c ./sequential_search/test_sequential_search_ua.c
+
+install: selectionSort bubbleSort sequentialSearch
+	./selectionSort && ./bubbleSort && ./sequentialSearch
     
 clean: 
-	rm selectionSort bubbleSort
+	rm selectionSort bubbleSort sequentialSearch

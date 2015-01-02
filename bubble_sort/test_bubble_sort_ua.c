@@ -23,8 +23,8 @@ static char* test_null() {
 static char* test_invalid_size() {
     int array[] = {1, 6, 4};
 
-    mu_assert("error, sorted NULL array", bubble_sort(array, 0) == -2);
-    mu_assert("error, sorted NULL array", bubble_sort(array, -5) == -2);
+    mu_assert("error, sorted array with 0 elements", bubble_sort(array, 0) == -2);
+    mu_assert("error, sorted array with negative size", bubble_sort(array, -5) == -2);
     return 0;
 }
 

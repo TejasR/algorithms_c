@@ -1,4 +1,4 @@
 language: c
 compiler: gcc
 script: make && make install
-after_script: mamke clean
+after_script: make clean

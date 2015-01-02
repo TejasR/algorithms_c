@@ -10,8 +10,8 @@ int bubble_sort(int *array, int size) {
         return -2;
     }
     int i = 0, j = 0;
-    for (; i < size - 2; i++) {
-        for (j = 0; j < size-1-i; j++) {
+    for (; i <= size - 2; i++) {
+        for (j = 0; j <= size-1-i; j++) {
             if (array[j+1] < array[j]) {
                 swap(array, j, j+1);
             }

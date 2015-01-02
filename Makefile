@@ -1,12 +1,15 @@
 CC=gcc
 
-all: selection_sort
+all: selectionSort bubbleSort
 
-selection_sort: ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/using_array/selection_sort.h ./Selection\ sort/test_selection_sort_ua.c
-	$(CC) -o selection_sort ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/test_selection_sort_ua.c
+selectionSort: ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/using_array/selection_sort.h ./Selection\ sort/test_selection_sort_ua.c
+	$(CC) -o selectionSort ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort/test_selection_sort_ua.c
 
-install: selection_sort
-	./selection_sort
+bubbleSort: ./bubble_sort/using_array/bubble_sort.c ./bubble_sort/using_array/bubble_sort.h ./bubble_sort/test_bubble_sort_ua.c
+	$(CC) -o bubbleSort ./bubble_sort/using_array/bubble_sort.c ./bubble_sort/test_bubble_sort_ua.c
+
+install: selectionSort bubbleSort
+	./selectionSort && ./bubbleSort
     
 clean: 
-	rm selection_sort
+	rm selectionSort bubbleSort

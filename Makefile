@@ -7,3 +7,6 @@ selection_sort: ./Selection\ sort/using_array/selection_sort.c ./Selection\ sort
 
 install: selection_sort
 	./selection_sort
+    
+clean: 
+	rm selection_sort

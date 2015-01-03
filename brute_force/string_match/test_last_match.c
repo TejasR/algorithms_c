@@ -1,4 +1,4 @@
-#include "../minunit.h"
+#include "../../minunit.h"
 #include "./first_match/string_match.h"
 #include <stdio.h>
 

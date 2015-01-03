@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../minunit.h"
+#include "../../minunit.h"
 #include "./using_array/selection_sort.h"
 
 int tests_run = 0;

@@ -1,4 +1,4 @@
-#include "../minunit.h"
+#include "../../minunit.h"
 #include "./using_array/sequential_search.h"
 #include <stdio.h>
 

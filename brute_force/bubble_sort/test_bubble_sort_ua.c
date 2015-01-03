@@ -1,4 +1,4 @@
-#include "../minunit.h"
+#include "../../minunit.h"
 #include "./using_array/bubble_sort.h"
 #include <stdio.h>
 

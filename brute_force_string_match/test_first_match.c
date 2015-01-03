@@ -43,6 +43,10 @@ static char* test_successful_match() {
 
     char *pattern3 = "hello";
     mu_assert("error, did not find the pattern", string_match(text, pattern3) == 1);
+
+    char *text1 = "hehello";
+    char *pattern4 = "he";
+    mu_assert("error, did not find the pattern", string_match(text1, pattern4) == 1);
     return 0;
 }
 

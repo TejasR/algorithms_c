@@ -9,7 +9,7 @@ int tests_run = 0;
  */
 static char* test_normal_ops() {
     int array[] = {10, 34, 23, 9, -5, -7, 0};
-    
+
     mu_assert("error, sorted array with 0 elements", selection_sort(array, 0) == -2);
     mu_assert("error, did not return 0", selection_sort(array, 7) == 0);
     int i;
@@ -25,7 +25,7 @@ static char* test_normal_ops() {
  */
 static char* test_null() {
     int *array = NULL;
-    
+
     mu_assert("error, sorted NULL array", selection_sort(array, 0) == -1);
     mu_assert("error, sorted NULL array", selection_sort(array, 3) == -1);
     mu_assert("error, sorted NULL array", selection_sort(array, -2) == -1);
@@ -38,7 +38,7 @@ static char* test_null() {
  */
 static char* test_lt_size() {
     int array[] = {128, 100, 10, -23, 0, -126};
-    
+
     mu_assert("error, did not sort successfully", selection_sort(array, 3) == 0);
     int i;
     printf("Sorted: ");

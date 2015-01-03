@@ -3,10 +3,10 @@
 /*
  * Limits:
  * 1. If the size of the array passed is less than the
- * actual size of the array then only those elements of the 
+ * actual size of the array then only those elements of the
  * array will be sorted
  * 2. If the size of the array passed is greater than the
- * actual size of the array, then it might result in a 
+ * actual size of the array, then it might result in a
  * segmentation fault and the sort might fail.
  */
 int selection_sort( int *array, int n ) {
